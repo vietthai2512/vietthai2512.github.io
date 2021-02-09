@@ -10,20 +10,19 @@ console.log('dame');
 }*/
 addEventListener('click', function (event)
 {
-    //event.preventDefault();                     // Don't navigate!
+    const anchor = event.target.closest("a");   // Find closest Anchor (or self)
+    if (!anchor) return;
+
+    const home_a_tag = document.getElementById('home_a_tag');
+    home_a_tag.removeAttribute('style');
+
     const nav_children = document.getElementById('nav').children;
-    //console.log(nav_children[0].getAttribute('style'));
-    /*nav_children.forEach(element =>
-    {
-        element.removeAttribute('border-bottom');
-    });*/
     for (let nav_child of nav_children)
     {
         nav_child.removeAttribute('style');
     }
 
-    const anchor = event.target.closest("a");   // Find closest Anchor (or self)
-    if (!anchor) return;                        // Not found. Exit here.
+    // Not found. Exit here.
     anchor.setAttribute('style', 'border-bottom: 1px solid');
     console.log(anchor.getAttribute('href'));  // Log to test
 });
