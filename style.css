@@ -80,6 +80,10 @@ nav a:not(:last-of-type) {
 	margin-right: 1.5vw;
 }
 
+a:active {
+	border-bottom: 1px solid;
+}
+
 /* ------- General ------- */
 
 a {
