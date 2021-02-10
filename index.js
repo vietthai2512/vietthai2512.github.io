@@ -6,14 +6,13 @@ nav_children.forEach((elem) =>
     {
         for (let nav_child of nav_children)
             nav_child.removeAttribute('style');
-        elem.setAttribute('style', 'border-bottom: 1px solid');
+        elem.setAttribute('style', 'border-bottom: 1px solid; color: var(--selected-hightlight)');
     });
 });
 
 const svg = document.querySelector('div.float-right.text-gray').querySelectorAll('svg');
 svg.forEach((elem) =>
 {
-
     let width = elem.getAttribute("width");
     let height = elem.getAttribute("height");
     // Remove height property entirely
