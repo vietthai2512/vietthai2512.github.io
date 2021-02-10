@@ -560,6 +560,11 @@ article time {
 	background: var(--bgcolor);
 	color: var(--textcolor);
 	border: 0 !important;
+	font-size: 1.5vw !important;
+}
+
+.text-muted {
+	font-size: 1rem !important;
 }
 
 div.float-right.text-gray {
