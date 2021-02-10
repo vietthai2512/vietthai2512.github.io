@@ -18,6 +18,7 @@
 
     <!-- You could also inline the stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     <script async src="index.js"></script>
 </head>
 
@@ -39,6 +40,22 @@
             <!-- HOME -->
 
             <p>This is my personal page.</p>
+
+            <!-- Include the library. -->
+            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+
+            <!-- Prepare a container for your calendar. -->
+            <div class="calendar">
+                <!-- Loading stuff -->
+                <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" class="spinner" />
+                <p class="spinner-text monospace">Crunching <a
+                        href="https://github.com/vietthai2512">@vietthai2512</a>'s contributions just for you.</p>
+            </div>
+
+            <script>
+                GitHubCalendar(".calendar", "vietthai2512", { responsive: true, tooltips: true });
+            </script>
         </section>
 
         <section id="about">

@@ -1,3 +1,12 @@
+/* Github Calendar Color Override */
+:root {
+	--color-calendar-graph-day-bg: #ff00001a !important;
+	--color-calendar-graph-day-L1-bg: #ff00004d !important;
+	--color-calendar-graph-day-L2-bg: #ff000080 !important;
+	--color-calendar-graph-day-L3-bg: #ff0000cc !important;
+	--color-calendar-graph-day-L4-bg: #ff0000 !important;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -13,7 +22,7 @@
 @media (prefers-color-scheme: dark) {
 	* {
 		--textcolor: #dadada;
-		--bgcolor: #141414;
+		--bgcolor: #0e1217;
 		--highlight: #00ffb3;
 		--headercolor: #063829;
 	}
@@ -544,4 +553,44 @@ article time {
 		height: 100vh;
 		object-fit: contain;
 	}
+}
+
+/* Github Calendar */
+.calendar {
+	background: var(--bgcolor);
+	color: var(--textcolor);
+	border: 0 !important;
+}
+
+div.float-right.text-gray {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.float-right.text-gray svg {
+	margin: 0.2rem;
+}
+
+div.float-right.text-gray svg:first-of-type {
+	margin-left: 0.4rem;
+}
+
+div.float-right.text-gray svg:last-of-type {
+	margin-right: 0.4rem;
+}
+
+.contrib-number {
+	color: var(--color-calendar-graph-day-L4-bg) !important;
+}
+
+img.spinner {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+rect {
+	rx: 1.5;
+	ry: 1.5;
 }
