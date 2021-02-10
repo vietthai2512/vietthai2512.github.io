@@ -23,8 +23,9 @@
 	* {
 		--textcolor: #dadada;
 		--bgcolor: #0e1217;
-		--highlight: #b1b4b8;
-		--selected-hightlight: #00ffb3;
+		--highlight: #00ffb3;
+		--header-highlight: #b1b4b8;
+		--selected-header-highlight: #00ffb3;
 		--headercolor: #171c22;
 	}
 }
@@ -85,6 +86,10 @@ header h1 {
 	flex: 1; /* pushes nav to the right */
 	white-space: nowrap;
 	/*padding: 0 5vw 0.5em 0;*/
+}
+
+header a {
+	color: var(--header-highlight);
 }
 
 nav a:not(:last-of-type) {

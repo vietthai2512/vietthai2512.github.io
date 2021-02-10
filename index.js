@@ -6,7 +6,7 @@ nav_children.forEach((elem) =>
     {
         for (let nav_child of nav_children)
             nav_child.removeAttribute('style');
-        elem.setAttribute('style', 'border-bottom: 1px solid; color: var(--selected-hightlight)');
+        elem.setAttribute('style', 'color: var(--selected-header-highlight)');
     });
 });
 
