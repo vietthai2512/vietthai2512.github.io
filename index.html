@@ -37,130 +37,161 @@
 
     <main>
         <section id="home">
-            <!-- HOME -->
+            <div class="content">
+                <!-- HOME -->
 
-            <p>This is my personal page.</p>
+                <p>This is my personal page.</p>
 
-            <!-- Include the library. -->
-            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+                <!-- Include the library. -->
+                <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
 
-            <!-- Prepare a container for your calendar. -->
-            <div class="calendar">
-                <!-- Loading stuff -->
-                <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" class="spinner" />
-                <p class="spinner-text monospace">Crunching <a
-                        href="https://github.com/vietthai2512">@vietthai2512</a>'s contributions just for you.</p>
+                <!-- Prepare a container for your calendar. -->
+                <div class="calendar">
+                    <!-- Loading stuff -->
+                    <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif"
+                        class="spinner" />
+                    <p class="spinner-text monospace">Crunching <a
+                            href="https://github.com/vietthai2512">@vietthai2512</a>'s contributions just for you.</p>
+                </div>
+
+                <script>
+                    GitHubCalendar(".calendar", "vietthai2512", { responsive: true, tooltips: true });
+                </script>
             </div>
 
-            <script>
-                GitHubCalendar(".calendar", "vietthai2512", { responsive: true, tooltips: true });
-            </script>
+            <footer class="footer">
+                Made with LOVE
+            </footer>
         </section>
 
         <section id="about">
-            <!-- ABOUT -->
+            <div class="content">
+                <!-- ABOUT -->
 
-            <p>
-                This is the about page.
-                <a href="#another-page">This is a link to another page</a>.
-            </p>
+                <p>
+                    This is the about page.
+                    <a href="#another-page">This is a link to another page</a>.
+                </p>
 
-            <figure>
-                <a href="#img-about">
-                    <img loading="lazy" alt="" src="//dummyimage.com/1200x600/ddd/bbb" width="1200" height="600" />
-                </a>
-                <figcaption>
-                    Example of an image with a link to a larger version.
-                </figcaption>
-            </figure>
+                <figure>
+                    <a href="#img-about">
+                        <img loading="lazy" alt="" src="//dummyimage.com/1200x600/ddd/bbb" width="1200" height="600" />
+                    </a>
+                    <figcaption>
+                        Example of an image with a link to a larger version.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <footer class="footer">
+                Made with LOV
+            </footer>
         </section>
 
         <section id="til">
-            <!-- NEWS -->
+            <div class="content">
+                <!-- NEWS -->
 
-            <article>
-                <h2>
-                    Blogging with Joe Bloggs
-                    <time datetime="2020-10-10">10.10.2020</time>
-                </h2>
-                <p>
-                    One <em>could</em> use this setup to write
-                    <s>a blog</s> short updates. For images make sure to use
-                    the <code>loading="lazy"</code> attribute, so they get
-                    loaded only when needed.<label for="lazy">1</label><input type="checkbox" id="lazy" /><small>
-                        You might be able to use it for
-                        <code>iframe</code> embeds too(?), but maybe just
-                        write a link to the Youtube video instead.
-                    </small>
-                </p>
-            </article>
+                <article>
+                    <h2>
+                        Blogging with Joe Bloggs
+                        <time datetime="2020-10-10">10.10.2020</time>
+                    </h2>
+                    <p>
+                        One <em>could</em> use this setup to write
+                        <s>a blog</s> short updates. For images make sure to use
+                        the <code>loading="lazy"</code> attribute, so they get
+                        loaded only when needed.<label for="lazy">1</label><input type="checkbox" id="lazy" /><small>
+                            You might be able to use it for
+                            <code>iframe</code> embeds too(?), but maybe just
+                            write a link to the Youtube video instead.
+                        </small>
+                    </p>
+                </article>
 
-            <article>
-                <h2>
-                    <a href="https://example.com">Why Your Cat Bites You</a>
-                    <time datetime="2004-12-12">12.12.2004</time>
-                </h2>
-                <p>Honestly you don't want to know.</p>
-            </article>
+                <article>
+                    <h2>
+                        <a href="https://example.com">Why Your Cat Bites You</a>
+                        <time datetime="2004-12-12">12.12.2004</time>
+                    </h2>
+                    <p>Honestly you don't want to know.</p>
+                </article>
+            </div>
+
+            <footer class="footer">
+                Made with LO
+            </footer>
         </section>
 
         <section id="photos">
-            <!-- PHOTOS -->
+            <div class="content">
+                <!-- PHOTOS -->
 
-            <p>An example of a photo gallery with a lightbox.</p>
+                <p>An example of a photo gallery with a lightbox.</p>
 
-            <!-- You can use this grid of images in any page -->
+                <!-- You can use this grid of images in any page -->
 
-            <div class="grid">
-                <a href="#img-01"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb" /></a>
-                <a href="#img-02"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb" /></a>
-                <a href="#img-03"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb" /></a>
-                <a href="#img-04"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb" /></a>
-                <a href="#img-05"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb" /></a>
-                <a href="#img-06"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb" /></a>
-                <a href="#img-07"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb" /></a>
-                <a href="#img-08"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb" /></a>
-                <a href="#img-09"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb" /></a>
-                <a href="#img-10"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb" /></a>
-                <a href="#img-11"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb" /></a>
-                <a href="#img-12"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb" /></a>
-                <a href="#img-13"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb" /></a>
-                <a href="#img-14"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb" /></a>
-                <a href="#img-15"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb" /></a>
+                <div class="grid">
+                    <a href="#img-01"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb" /></a>
+                    <a href="#img-02"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb" /></a>
+                    <a href="#img-03"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb" /></a>
+                    <a href="#img-04"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb" /></a>
+                    <a href="#img-05"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb" /></a>
+                    <a href="#img-06"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb" /></a>
+                    <a href="#img-07"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb" /></a>
+                    <a href="#img-08"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb" /></a>
+                    <a href="#img-09"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb" /></a>
+                    <a href="#img-10"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb" /></a>
+                    <a href="#img-11"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb" /></a>
+                    <a href="#img-12"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb" /></a>
+                    <a href="#img-13"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb" /></a>
+                    <a href="#img-14"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb" /></a>
+                    <a href="#img-15"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb" /></a>
+                </div>
             </div>
+
+            <footer class="footer">
+                Made with L
+            </footer>
         </section>
 
         <section id="portfolio">
-            <!-- PORTFOLIO -->
+            <div class="content">
+                <!-- PORTFOLIO -->
 
-            <div class="slides">
-                <figure>
-                    <img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb" />
-                </figure>
-                <figure>
-                    <img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb" />
-                </figure>
-                <figure>
-                    <img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb" />
-                </figure>
-                <figure>
-                    <p>You could also have text over here…</p>
-                </figure>
-                <figure>
-                    <img loading="lazy" alt="" src="//dummyimage.com/1000x1000/ddd/bbb" />
-                    <figcaption>…or image captions</figcaption>
-                </figure>
-                <figure style="background: #fdcb39">
-                    <img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb" />
-                    <figcaption>add a solid background</figcaption>
-                </figure>
-                <figure class="cover">
-                    <img loading="lazy" alt=""
-                        src="https://64.media.tumblr.com/7904066936b9324571738bbbeeb082e9/tumblr_myopxy8uJI1qz4vi0o1_1280.jpg" />
-                    <p style="color: #fff">or go full bleed</p>
-                </figure>
+                <div class="slides">
+                    <figure>
+                        <img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb" />
+                    </figure>
+                    <figure>
+                        <img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb" />
+                    </figure>
+                    <figure>
+                        <img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb" />
+                    </figure>
+                    <figure>
+                        <p>You could also have text over here…</p>
+                    </figure>
+                    <figure>
+                        <img loading="lazy" alt="" src="//dummyimage.com/1000x1000/ddd/bbb" />
+                        <figcaption>…or image captions</figcaption>
+                    </figure>
+                    <figure style="background: #fdcb39">
+                        <img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb" />
+                        <figcaption>add a solid background</figcaption>
+                    </figure>
+                    <figure class="cover">
+                        <img loading="lazy" alt=""
+                            src="https://64.media.tumblr.com/7904066936b9324571738bbbeeb082e9/tumblr_myopxy8uJI1qz4vi0o1_1280.jpg" />
+                        <p style="color: #fff">or go full bleed</p>
+                    </figure>
+                </div>
             </div>
+
+            <footer class="footer">
+                Made
+            </footer>
         </section>
 
         <section id="another-page">

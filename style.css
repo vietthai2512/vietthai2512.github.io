@@ -57,12 +57,22 @@ section {
 
 section:target {
 	/* Show section */
-	display: block;
+	display: flex;
+	flex-direction: column;
 }
 
 section#home {
 	/* Show #home by default */
-	display: block;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex-shrink: 0;
 }
 
 /* ------- Header ------- */
