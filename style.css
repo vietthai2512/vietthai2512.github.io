@@ -64,15 +64,7 @@ section:target {
 section#home {
 	/* Show #home by default */
 	display: flex;
-	flex-direction: column;
-}
-
-.content {
-	flex: 1 0 auto;
-}
-
-.footer {
-	flex-shrink: 0;
+	flex-direction: row;
 }
 
 /* ------- Header ------- */
@@ -517,12 +509,20 @@ article time {
 	body {
 		font-size: 16px;
 	}
+
+	section#home {
+		flex-direction: column;
+	}
 }
 
 @media only screen and (max-width: 540px) {
 	nav {
 		width: 100%;
 	} /* Fix for older webkit versions */
+
+	section#home {
+		flex-direction: column;
+	}
 }
 
 /* ------- Print ------- */
