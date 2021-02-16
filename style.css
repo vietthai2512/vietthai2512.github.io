@@ -609,8 +609,14 @@ div.float-right.text-gray svg:last-of-type {
 
 img.spinner {
 	text-align: center;
-	margin: 0 auto;
+	margin: auto;
+	margin-bottom: 50px;
 	display: block;
+}
+
+p.spinner-text {
+	color: #ffffff;
+	margin: auto;
 }
 
 rect {
