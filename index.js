@@ -22,3 +22,19 @@ svg.forEach((elem) =>
     // Add a viewBox property based on the former width/height
     elem.setAttribute("viewBox", "0 0 " + width + " " + height);
 });
+
+const theme_switch = document.getElementById('theme-switch');
+const body = document.getElementById('body');
+
+theme_switch.addEventListener('change', () =>
+{
+    if (theme_switch.checked)
+    {
+        body.style.background = 'var(--light-bg)';
+    }
+    else
+    {
+        body.style.background = 'var(--dark-bg)';
+    }
+});
+
