@@ -26,15 +26,23 @@ svg.forEach((elem) =>
 const theme_switch = document.getElementById('theme-switch');
 const body = document.getElementById('body');
 
+if (localStorage.getItem('lightTheme') === 'true')
+{
+    theme_switch.checked = true;
+    body.style.background = 'var(--light-bg)';
+}
+
 theme_switch.addEventListener('change', () =>
 {
     if (theme_switch.checked)
     {
         body.style.background = 'var(--light-bg)';
+        localStorage.setItem('lightTheme', 'true');
     }
     else
     {
         body.style.background = 'var(--dark-bg)';
+        localStorage.removeItem('lightTheme');
     }
 });
 
