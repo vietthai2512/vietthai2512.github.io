@@ -30,6 +30,7 @@ if (localStorage.getItem('lightTheme') === 'true')
 {
     themeSwitch.checked = true;
     body.style.background = 'var(--light-bg)';
+    body.style.color = 'var(--light-text)';
 }
 
 themeSwitch.addEventListener('change', () =>
@@ -37,11 +38,13 @@ themeSwitch.addEventListener('change', () =>
     if (themeSwitch.checked)
     {
         body.style.background = 'var(--light-bg)';
+        body.style.color = 'var(--light-text)';
         localStorage.setItem('lightTheme', 'true');
     }
     else
     {
         body.style.background = 'var(--dark-bg)';
+        body.style.color = 'var(--dark-text)';
         localStorage.removeItem('lightTheme');
     }
 });
