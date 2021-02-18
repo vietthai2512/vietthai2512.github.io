@@ -1,11 +1,11 @@
-const nav_children = document.getElementById('header').querySelectorAll('a');
+const navChildren = document.getElementById('header').querySelectorAll('a');
 
-nav_children.forEach((elem) =>
+navChildren.forEach((elem) =>
 {
     elem.addEventListener('click', () => 
     {
-        for (let nav_child of nav_children)
-            nav_child.removeAttribute('style');
+        for (let navChild of navChildren)
+            navChild.removeAttribute('style');
         elem.setAttribute('style', 'color: var(--header-text-selected-color)');
     });
 });
@@ -23,18 +23,18 @@ svg.forEach((elem) =>
     elem.setAttribute("viewBox", "0 0 " + width + " " + height);
 });
 
-const theme_switch = document.getElementById('theme-switch');
+const themeSwitch = document.getElementById('theme-switch');
 const body = document.getElementById('body');
 
 if (localStorage.getItem('lightTheme') === 'true')
 {
-    theme_switch.checked = true;
+    themeSwitch.checked = true;
     body.style.background = 'var(--light-bg)';
 }
 
-theme_switch.addEventListener('change', () =>
+themeSwitch.addEventListener('change', () =>
 {
-    if (theme_switch.checked)
+    if (themeSwitch.checked)
     {
         body.style.background = 'var(--light-bg)';
         localStorage.setItem('lightTheme', 'true');
