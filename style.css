@@ -59,6 +59,7 @@ body {
 	max-width: 64em; /* remove this for a full-width layout */
 	min-width: 340px;
 	margin: 0 auto; /* centers the layout */
+	transition: color 0.2s, background 0.2s;
 }
 
 body #page {
@@ -76,6 +77,7 @@ section {
 	min-height: 100vh;
 	width: 100%;
 	background: var(--bg-color);
+	transition: background 0.2s;
 }
 
 section:target {
@@ -104,6 +106,7 @@ header {
 	height: 3rem;
 	z-index: 2;
 	align-items: center;
+	transition: background 0.2s;
 }
 
 header h1 {
@@ -115,6 +118,7 @@ header h1 {
 
 header a {
 	color: var(--header-text-color);
+	transition: color 0.2s;
 }
 
 .nav-switch-label {
@@ -210,6 +214,7 @@ nav a:last-of-type {
 a {
 	text-decoration: none;
 	color: var(--highlight-color);
+	transition: color 0.2s;
 }
 
 a:hover {
@@ -685,6 +690,7 @@ article time {
 	color: var(--text-color);
 	border: 0 !important;
 	font-size: 1.2vw !important;
+	transition: color 0.2s, background 0.2s;
 }
 
 .text-muted {
