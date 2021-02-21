@@ -1,34 +1,46 @@
 /* Github Calendar Color Override */
 :root {
-	--color-calendar-graph-day-bg: #ff00001a !important;
-	--color-calendar-graph-day-L1-bg: #ff00004d !important;
-	--color-calendar-graph-day-L2-bg: #ff000080 !important;
+	/* --color-calendar-graph-day-bg: hsla(0, 100%, 50%, 0.102) !important;
+	--color-calendar-graph-day-L1-bg: hsla(0, 100%, 50%, 0.302) !important;
+	--color-calendar-graph-day-L2-bg: hsla(0, 100%, 50%, 0.502) !important;
 	--color-calendar-graph-day-L3-bg: #ff0000cc !important;
-	--color-calendar-graph-day-L4-bg: #ff0000 !important;
+	--color-calendar-graph-day-L4-bg: hsl(0, 100%, 50%) !important; */
+
+	--light: hsla(320, 54%, 50%, 0.102);
+	--light-L1: hsla(320, 54%, 50%, 0.302);
+	--light-L2: hsla(320, 54%, 50%, 0.502);
+	--light-L3: hsla(320, 54%, 50%, 0.8);
+	--light-L4: hsla(320, 54%, 50%, 1);
+
+	--color-calendar-graph-day-bg: hsla(320, 54%, 50%, 0.102) !important;
+	--color-calendar-graph-day-L1-bg: hsla(320, 54%, 50%, 0.302) !important;
+	--color-calendar-graph-day-L2-bg: hsla(320, 54%, 50%, 0.502) !important;
+	--color-calendar-graph-day-L3-bg: hsla(320, 54%, 50%, 0.8) !important;
+	--color-calendar-graph-day-L4-bg: hsla(320, 54%, 50%, 1) !important;
 
 	/* Light mode */
 	--light-text: #121212;
-	--light-bg: #ffffff;
-	--light-highlight: #2749c9;
-	--light-header-bg: #f0f6fb;
-	--light-header-text: #121212;
-	--light-header-text-selected: #121212;
+	--light-bg: #fbf9fa;
+	--light-highlight: #c43b96;
+	--light-header-bg: #1a3d25;
+	--light-header-text: #fbf9fa;
+	--light-header-text-selected: #21de60;
+	--light-news-bg: #c2e5ce;
 
 	--dark-switch-shadow: #fce477;
 	--dark-switch-icon: "🌝";
-	--light-switch-text: "dark mode?";
 
 	/* Dark mode */
 	--dark-text: #dadada;
-	--dark-bg: #0e1217;
-	--dark-highlight: #00ffb3;
+	--dark-bg: #121212;
+	--dark-highlight: #69e179;
 	--dark-header-bg: #171c22;
 	--dark-header-text: #f0f6fb;
-	--dark-header-text-selected: #00ffb3;
+	--dark-header-text-selected: #d07bb3;
+	--dark-news-bg: #36202f;
 
 	--light-switch-shadow: #373d4e;
 	--light-switch-icon: "🌚";
-	--dark-switch-text: "light mode?";
 
 	/* Default mode */
 	--text-color: var(--dark-text);
@@ -37,6 +49,7 @@
 	--header-bg-color: var(--dark-header-bg);
 	--header-text-color: var(--dark-header-text);
 	--header-text-selected-color: var(--dark-header-text-selected);
+	--news-bg-color: var(--dark-news-bg);
 
 	--switch-shadow-color: var(--dark-switch-shadow);
 	--switch-icon: var(--dark-switch-icon);
@@ -118,7 +131,6 @@ header h1 {
 
 header a {
 	color: var(--header-text-color);
-	transition: color 0.2s;
 }
 
 .nav-switch-label {
@@ -163,7 +175,7 @@ nav a:last-of-type {
 .switch-label::before {
 	width: 2.2rem;
 	height: 1rem;
-	background-color: var(--dark-text);
+	background-color: var(--header-text-color);
 	border-radius: 100rem;
 	-webkit-transition: background-color 0.25s ease;
 	transition: background-color 0.25s ease;
@@ -176,9 +188,11 @@ nav a:last-of-type {
 	-webkit-transition: left 0.25s ease;
 	transition: left 0.25s ease;
 }
-.theme-switch:checked ~ #page .switch-label::before {
+
+/* .theme-switch:checked ~ #page .switch-label::before {
 	background: var(--light-text);
-}
+} */
+
 .theme-switch:checked ~ #page .switch-label::after {
 	left: 1rem;
 }
@@ -203,6 +217,7 @@ nav a:last-of-type {
 	--header-bg-color: var(--light-header-bg);
 	--header-text-color: var(--light-header-text);
 	--header-text-selected-color: var(--light-header-text-selected);
+	--news-bg-color: var(--light-news-bg);
 
 	--switch-shadow-color: var(--light-switch-shadow);
 	--switch-icon: var(--light-switch-icon);
@@ -460,6 +475,11 @@ a[href$=".png"]:before {
 }
 
 /* ------- News ------- */
+article {
+	padding: 0.5em;
+	background: var(--news-bg-color);
+	transition: background 0.2s;
+}
 
 article + article {
 	margin-top: 4.5em;
