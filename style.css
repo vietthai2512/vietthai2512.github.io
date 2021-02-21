@@ -28,7 +28,7 @@
 	--light-news-bg: #c2e5ce;
 
 	--dark-switch-shadow: #fce477;
-	--dark-switch-icon: "🌝";
+	--dark-switch-icon: "😴";
 
 	/* Dark mode */
 	--dark-text: #dadada;
@@ -39,8 +39,8 @@
 	--dark-header-text-selected: #d07bb3;
 	--dark-news-bg: #36202f;
 
-	--light-switch-shadow: #373d4e;
-	--light-switch-icon: "🌚";
+	--light-switch-shadow: #fce477;
+	--light-switch-icon: "🙂";
 
 	/* Default mode */
 	--text-color: var(--dark-text);
