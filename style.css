@@ -718,22 +718,22 @@ article time {
 	font-size: 0.8rem !important;
 }
 
-div.float-right.text-gray {
+div.float-right.color-text-secondary {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 0.2rem 0 0.2rem 0;
 }
 
-div.float-right.text-gray svg {
+div.float-right.color-text-secondary svg {
 	margin: 0.12rem;
 }
 
-div.float-right.text-gray svg:first-of-type {
+div.float-right.color-text-secondary svg:first-of-type {
 	margin-left: 0.24rem;
 }
 
-div.float-right.text-gray svg:last-of-type {
+div.float-right.color-text-secondary svg:last-of-type {
 	margin-right: 0.24rem;
 }
 

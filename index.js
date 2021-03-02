@@ -10,7 +10,7 @@ navChildren.forEach((elem) =>
     });
 });
 
-const svg = document.querySelector('div.float-right.text-gray').querySelectorAll('svg');
+const svg = document.querySelector('div.float-right.color-text-secondary').querySelectorAll('svg');
 svg.forEach((elem) =>
 {
     let width = elem.getAttribute("width");
