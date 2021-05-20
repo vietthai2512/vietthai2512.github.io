@@ -29,7 +29,9 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume_*.tex
+          root_file: |
+            resume_vi.tex
+            resume_en.tex
           working_directory: docs/resume/
       - name: Commit latest pdf file
         uses: stefanzweifel/git-auto-commit-action@v4
