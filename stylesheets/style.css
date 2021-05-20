@@ -106,6 +106,18 @@ section#home {
 	flex-direction: row;
 }
 
+section#about li {
+	margin-left: 1rem;
+}
+
+section#about li::marker {
+  	content: "👉";
+}
+
+section#about span {
+	padding-left: 1rem;
+}
+
 /* ------- Header ------- */
 
 header {
