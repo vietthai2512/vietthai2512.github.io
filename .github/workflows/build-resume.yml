@@ -30,7 +30,6 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: |
-            resume_vi.tex
             resume_en.tex
           working_directory: docs/resume/
       - name: Commit latest pdf file
